@@ -18,6 +18,7 @@ To add a new output format, you must implement the IFormat interface and put you
 
 # Installation
 run composer install
+duplicate .env.example file and rename it to .env
 
 # Running Tests
 run phpunit on root folder
