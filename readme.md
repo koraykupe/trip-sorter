@@ -1,21 +1,31 @@
-# Lumen PHP Framework
+# Trip Sorter task for propertyfinder.ae
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+I used Laravel Lumen that is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax.
+But actually i didn't use any tools of the framework. I created the API from scratch.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+You can find the codes in app\TripSorted folder.
 
-## Official Documentation
+Unit tests are in tests folder.
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+I used Interfaces and Abstract classes, so it's easy to add new boarding card type, change output format or add a new soting algorithm.
 
-## Security Vulnerabilities
+I used some demo data on the task document and you can change them on routes/web.php file.
+If you add new sorting algorithms or output formats, you can also change them in this file.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+To add a new Boarding Pass, you must extend the BoardingCard abstract class and put your class in app\TripSorter\BoardingCards folder.
+To add a new Sorting Algorithm, you must implement the ISorting interface and put your class in app\TripSorter\Sorting folder.
+To add a new output format, you must implement the IFormat interface and put your class in app\TripSorter\View folder.
 
-## License
+# Installation
+run composer install
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+# Running Tests
+run phpunit on root folder
+
+# Running the project
+Go to main folder of your local URL.
+For example if you set tripsorter.app, go to it's main page to see the results
+
+#Requirements
+Apache/Nginx
+PHP 5.6+
