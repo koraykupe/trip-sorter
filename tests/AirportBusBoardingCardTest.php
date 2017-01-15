@@ -5,7 +5,7 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class AirportBusBoardingCardTest extends TestCase
 {
-    public function testReturnText()
+    public function test_return_text()
     {
         $airportBusBoardingCard = new \App\TripSorter\BoardingCards\AirportBusBoardingCard('Barcelona', 'Gerona Airport', null);
         $this->assertEquals($airportBusBoardingCard->toString(), "Take the airport bus from Barcelona to Gerona Airport. No seat assignment.");
