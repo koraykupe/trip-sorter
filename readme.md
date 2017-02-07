@@ -31,6 +31,12 @@ run phpunit on root folder
 Go to main folder of your local URL.
 For example if you set tripsorter.app, go to it's main page to see the results
 
-#Requirements
+# Requirements
 Apache/Nginx
 PHP 5.6+
+
+# TO-DO
+- Add more tests
+- Fix missing PHPDoc blocks
+- Add return types
+- Apply Factory pattern to BoardingCard creation process
