@@ -13,11 +13,11 @@ abstract class BoardingCard
 {
     /**
      * BoardingCard constructor.
-     * @param $departureLocation
-     * @param $arrivalLocation
+     * @param string $departureLocation
+     * @param string $arrivalLocation
      * @param $seat
      */
-    function __construct($departureLocation, $arrivalLocation, $seat)
+    public function __construct(string $departureLocation, string $arrivalLocation, $seat)
     {
         $this->departureLocation = $departureLocation;
         $this->arrivalLocation = $arrivalLocation;
@@ -104,7 +104,7 @@ abstract class BoardingCard
     /**
      * @return mixed
      */
-    public abstract function toString();
+    public abstract function toString() :string ;
 
 
 }

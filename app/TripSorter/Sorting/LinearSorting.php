@@ -26,7 +26,7 @@ class LinearSorting implements ISorting
      * @return array
      * Sorting algorithm using hash table
      */
-    public function sort($items = [])
+    public function sort(array $items = []) :array
     {
         $this->departureIndex = $this->makeDepartureIndex($items);
         $this->arrivalIndex = $this->makeArrivalIndex($items);
@@ -58,10 +58,10 @@ class LinearSorting implements ISorting
         return $firstDeparture;
     }
 
-    // Create array with indexes using key->value pair for arrivals and departures
-    // We'll use them to find starting location and next trip
 
     /**
+     * reate array with indexes using key->value pair for arrivals and departures
+     * We'll use them to find starting location and next trip
      * @param array $boardingCards
      * @return array
      */

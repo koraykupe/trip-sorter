@@ -15,5 +15,5 @@ interface ISorting
      * @param array $items
      * @return mixed
      */
-    public function sort($items = []);
+    public function sort(array $items = []) :array;
 }

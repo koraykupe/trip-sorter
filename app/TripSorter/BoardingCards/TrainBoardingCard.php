@@ -20,12 +20,12 @@ class TrainBoardingCard extends BoardingCard
 
     /**
      * TrainBoardingCard constructor.
-     * @param $departureLocation
-     * @param $arrivalLocation
+     * @param string $departureLocation
+     * @param string $arrivalLocation
      * @param $seat
      * @param $trainCode
      */
-    function __construct($departureLocation, $arrivalLocation, $seat, $trainCode)
+    public function __construct(string $departureLocation, string $arrivalLocation, $seat, $trainCode)
     {
         parent::__construct($departureLocation, $arrivalLocation, $seat);
         $this->trainCode = $trainCode;
@@ -34,7 +34,7 @@ class TrainBoardingCard extends BoardingCard
     /**
      * @return string
      */
-    public function toString()
+    public function toString() :string
     {
         return 'Take train ' . $this->trainCode . ' from ' . $this->getDepartureLocation() . ' to ' . $this->getArrivalLocation() . '. Sit in seat ' . $this->getSeat() . '.';
     }

@@ -1,4 +1,4 @@
-# Trip Sorter API
+# Trip Sorter task for propertyfinder.ae
 
 I used Laravel Lumen that is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax.
 But actually i didn't use any tools of the framework. I created the API from scratch.
@@ -31,12 +31,6 @@ run phpunit on root folder
 Go to main folder of your local URL.
 For example if you set tripsorter.app, go to it's main page to see the results
 
-# Requirements
+#Requirements
 Apache/Nginx
-PHP 5.6+
-
-# TO-DO
-- Add more tests
-- Fix missing PHPDoc blocks
-- Add return types
-- Apply Factory pattern to BoardingCard creation process
+PHP 7.0+

@@ -15,11 +15,11 @@ class AirportBusBoardingCard extends BoardingCard
 {
     /**
      * AirportBusBoardingCard constructor.
-     * @param $departureLocation
-     * @param $arrivalLocation
+     * @param string $departureLocation
+     * @param string $arrivalLocation
      * @param $seat
      */
-    function __construct($departureLocation, $arrivalLocation, $seat)
+    public function __construct(string $departureLocation, string $arrivalLocation, $seat)
     {
         parent::__construct($departureLocation, $arrivalLocation, $seat);
     }
@@ -27,7 +27,7 @@ class AirportBusBoardingCard extends BoardingCard
     /**
      * @return string
      */
-    public function toString()
+    public function toString() :string
     {
         $text = 'Take the airport bus from '.$this->getDepartureLocation().' to '.$this->getArrivalLocation().'. ';
         $seat = $this->getSeat() ? 'Sit in seat '.$this->getSeat().'.' : 'No seat assignment.';

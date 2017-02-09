@@ -26,16 +26,18 @@ class FlightBoardingCard extends BoardingCard
      */
     private $counter;
 
+
     /**
      * FlightBoardingCard constructor.
-     * @param $departureLocation
-     * @param $arrivalLocation
+     * @todo Use Factory pattern or decrease numbers of constructor parameters
+     * @param string $departureLocation
+     * @param string $arrivalLocation
      * @param $seat
      * @param $flight
      * @param $gate
      * @param $counter
      */
-    function __construct($departureLocation, $arrivalLocation, $seat, $flight, $gate, $counter)
+    public function __construct(string $departureLocation, string $arrivalLocation, $seat, $flight, $gate, $counter)
     {
         parent::__construct($departureLocation, $arrivalLocation, $seat);
 
@@ -47,7 +49,7 @@ class FlightBoardingCard extends BoardingCard
     /**
      * @return string
      */
-    public function toString()
+    public function toString() :string
     {
         return 'From ' . $this->getDepartureLocation() . ', take flight ' . $this->flight . ' to ' . $this->getArrivalLocation() . '. Gate ' . $this->gate . ', seat ' . $this->getSeat() . '. ' . ($this->counter ? 'Baggage drop at ticket counter ' . $this->counter . '.' : 'Baggage will be automatically transferred from your last leg.');
     }
