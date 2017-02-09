@@ -1,4 +1,4 @@
-# Trip Sorter task for propertyfinder.ae
+# Basic Trip Sorter
 
 I used Laravel Lumen that is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax.
 But actually i didn't use any tools of the framework. I created the API from scratch.
